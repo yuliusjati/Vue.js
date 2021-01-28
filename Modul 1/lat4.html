@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial -scale=1.0">
+    <title>Latihan 4</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  </head>
+  <body>
+    <div id="app">
+      <input type="text" placeholder="Masukkan nama anda" v-model="namaSaya">
+      <label>Nama saya adalah: {{namaSaya}}</label>
+    </div>
+    <script>
+      var app = new Vue({
+        el: "#app",
+        data: {
+          "namaSaya" : ""
+        }
+      })
+    </script>
+  </body>
+</html>
